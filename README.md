@@ -8,7 +8,7 @@
 
 </div>
 
-The blog post creator agent is a python script that uses the DuckDuckGo Search API and OpenAI's GPT-3 model to automate the creation of blog posts.
+The blog post creator agent is a python script that uses the DuckDuckGo Search API and OpenAI's GPT models (via LangChain and LangGraph) to automate the creation of blog posts.
 
 ## Demo
 https://github.com/jordan-jakisa/blog_post_writer/assets/72340216/ac194af8-789f-4849-83c6-176942119922
@@ -47,19 +47,20 @@ The agent basically consists of the following components
 
 1. Clone the repository:
 ```
-git clone https://github.com/jordan-jakisa/blog_post_writer.git
+git clone https://github.com/jordan-jakisa/blogger.git
 ```
 2. Navigate to the project directory:
 ```
-cd blog-post-creator
+cd blogger
 ```
-3. Install the required dependencies:
+3. Install the required dependencies (the project uses [pipenv](https://pipenv.pypa.io/)):
 ```
-pip install -r requirements.txt
+pip install pipenv
+pipenv install
 ```
-4. Enter the following commands to run the app:
+4. Run the app:
 ```
-streamlit run src/app.py
+pipenv run streamlit run src/app.py
 ```
 
 ## Contributing
